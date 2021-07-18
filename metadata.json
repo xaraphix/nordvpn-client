@@ -1,10 +1,8 @@
 {
-    "name" : "nordvpn-gnome-client",
-    "description" : "A nordvpn client for gnome which provides clean UI to manage and configure nordvpn.",
-    "shell-version" : [
-        "3.36"
-    ],
-    "url" : "",
-    "uuid" : "nordvpn-gnome-client@suyashsingh.in",
-    "version" : 1.0
+  "name": "nordvpn-gnome-client",
+  "description": "A nordvpn client for gnome which provides clean UI to manage and configure nordvpn.",
+  "shell-version": ["3.36"],
+  "url": "",
+  "uuid": "nordvpn-gnome-client@suyashsingh.in",
+  "version": 1.0
 }
