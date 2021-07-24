@@ -7,8 +7,21 @@ project('nordvpn-client', 'cpp',
     ])
 
 dep = dependency('gtkmm-4.0')
+epoxy_dep = dependency('epoxy')
 
-executable('nordvpn-client',
-           'main.cc',
-           dependencies: dep,
-           install: true)
+
+gnome = import('gnome')
+
+if epoxy_dep.found()
+  demo_resources = gnome.compile_resources('demo-resources',
+    'demo.gresource.xml',
+    source_dir: meson.current_source_dir(),
+    install: false,
+  )
+
+
+  executable('nordvpn-client',
+             'main.cc', demo_resources, 
+             dependencies: [epoxy_dep, dep],
+             install: true)
+endif

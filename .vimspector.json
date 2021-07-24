@@ -1,0 +1,19 @@
+{
+  "configurations": {
+    "Vim - run a test": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "name": "Cpp: Launch current file",
+        "type": "cppdbg",
+        "request": "launch",
+        "logging": {
+          "engineLogging": false
+        },
+        "debugOptions": [],
+        "MIMode": "gdb",
+        "cwd": "${cwd}",
+        "program": "${fileDirname}/build/nordvpn-client"
+      }
+    }
+  }
+}
